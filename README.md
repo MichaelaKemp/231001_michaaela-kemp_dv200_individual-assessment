@@ -96,15 +96,15 @@ plant-shop/
 
     
 Screenshots
-{Home Page}https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/HomePage.png 
+Home Page: https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/HomePage.png 
 
-{Plant List}https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/PlantList.png 
+Plant List: https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/PlantList.png 
 
-{Plant Details 01}https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/PlantDetails01.png 
+Plant Details 01: https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/PlantDetails01.png 
 
-{Plant Detail 02}https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/PlantDetails02.png
+Plant Detail 02: https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/PlantDetails02.png
 
-{Cart}https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/Cart.png
+Cart: ttps://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/Cart.png
 
 
 License
