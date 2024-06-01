@@ -104,7 +104,7 @@ Plant Details 01: https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_in
 
 Plant Detail 02: https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/PlantDetails02.png
 
-Cart: ttps://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/Cart.png
+Cart: https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment/blob/main/plant-shop-frontend/Screenshots/Cart.png
 
 
 License
