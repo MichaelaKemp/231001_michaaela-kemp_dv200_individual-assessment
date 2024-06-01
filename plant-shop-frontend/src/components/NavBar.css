@@ -1,0 +1,22 @@
+/* src/components/NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the links */
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; /* Add margin to space out links */
+}
+
+.navbar a:hover {
+    background-color: #444;
+    border-radius: 4px;
+}

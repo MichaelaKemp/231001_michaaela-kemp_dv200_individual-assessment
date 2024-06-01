@@ -3,45 +3,50 @@ dotenv.config();
 
 const express = require('express');
 const mongoose = require('mongoose');
-
-console.log('Loading Plant model...');
-const Plant = require('./models/Plant');
-console.log('Plant model loaded:', Plant);
+const cors = require('cors');
+const Plant = require('./models/Plant'); // Ensure this is the only place Plant is declared
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)
-    .then(() => console.log('Connected to MongoDB'))
-    .catch((err) => console.error('Could not connect to MongoDB...', err));
+  .then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.error('Could not connect to MongoDB...', err));
 
-app.post('/plants', async (req, res) => {
-    const plant = new Plant(req.body);
-    await plant.save();
-    res.send(plant);
-});
-
+// Define routes
 app.get('/plants', async (req, res) => {
-    const plants = await Plant.find();
-    res.send(plants);
+    try {
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 8;
+        const skip = (page - 1) * limit;
+
+        const plants = await Plant.find().skip(skip).limit(limit);
+        const total = await Plant.countDocuments();
+
+        res.json({
+            plants,
+            total,
+            page,
+            pages: Math.ceil(total / limit),
+        });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 });
 
+// Add the missing route for fetching plant details by ID
 app.get('/plants/:id', async (req, res) => {
-    const plant = await Plant.findById(req.params.id);
-    res.send(plant);
+    try {
+        const plant = await Plant.findById(req.params.id);
+        if (!plant) return res.status(404).send({ message: 'Plant not found' });
+        res.send(plant);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 });
 
-app.put('/plants/:id', async (req, res) => {
-    const plant = await Plant.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    res.send(plant);
-});
-
-app.delete('/plants/:id', async (req, res) => {
-    await Plant.findByIdAndDelete(req.params.id);
-    res.send({ message: 'Plant deleted' });
-});
-
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
