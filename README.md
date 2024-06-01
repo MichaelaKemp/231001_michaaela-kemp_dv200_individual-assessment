@@ -1,23 +1,10 @@
 Plant Shop
+
 Plant Shop is a web application for browsing, viewing details, and purchasing various plants. The application allows users to add plants to their cart and proceed to checkout.
 
 
-Table of Contents
+Features:
 
-Plant Shop
- Table of Contents
- Features
- Tech Stack
- Installation
-  Frontend
-  Backend
-Usage
-Folder Structure
-Screenshots
-License
-
-
-Features
 • Browse a list of plants.
 • View detailed information about each plant.
 • Add plants to the cart.
@@ -25,11 +12,13 @@ Features
 
 
 Tech Stack
+
 • Frontend:
   ° React
   ° React Router DOM
   ° Axios
   ° CSS
+
 • Backend:
   ° Node.js
   ° Express
@@ -38,30 +27,40 @@ Tech Stack
 
   
 Installation
+
 Frontend
 1. Clone the repository:
-  • git clone [https://github.com/yourusername/plant-shop.git](https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment.git)
-  • cd plant-shop/plant-shop-frontend
+  
+• git clone [https://github.com/yourusername/plant-shop.git](https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment.git)
+  
+• cd plant-shop/plant-shop-frontend
 
 2. Install dependencies:
-  • npm install
+ 
+ • npm install
 
 3. Start the development server:
-  • npm start
+  
+• npm start
 
 Backend
 1. Clone the repository if not already done:
-  • git clone [https://github.com/yourusername/plant-shop.git](https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment.git)
-  • cd plant-shop/plant-shop-backend
 
-2. Install dependencies:
-  • npm install
+• git clone [https://github.com/yourusername/plant-shop.git](https://github.com/MichaelaKemp/231001_michaaela-kemp_dv200_individual-assessment.git)
+  
+• cd plant-shop/plant-shop-backend
 
-3. Create a .env file in the root directory of plant-shop-backend and add the following:
-  • MONGODB_URI=mongodb+srv://dbUser:dbUserPassword@plant-shop.c6zl7mo.mongodb.net/plantshop?retryWrites=true&w=majority
+3. Install dependencies:
 
-4. Start the backend server:
-  • node server.js
+• npm install
+
+5. Create a .env file in the root directory of plant-shop-backend and add the following:
+
+• MONGODB_URI=mongodb+srv://dbUser:dbUserPassword@plant-shop.c6zl7mo.mongodb.net/plantshop?retryWrites=true&w=majority
+
+7. Start the backend server:
+
+• node server.js
 
 
 Usage
@@ -75,23 +74,41 @@ Usage
 Folder Structure
 
 plant-shop/
+
 ├── plant-shop-frontend/
+
 │   ├── public/
+
 │   ├── src/
+
 │   │   ├── assets/
+
 │   │   ├── components/
+
 │   │   ├── contexts/
+
 │   │   ├── pages/
+
 │   │   ├── App.js
+
 │   │   ├── App.css
+
 │   │   └── index.js
+
 │   ├── package.json
+
 │   └── README.md
+
 └── plant-shop-backend/
+  
     ├── models/
+    
     ├── server.js
+    
     ├── .env
+    
     ├── package.json
+    
     └── README.md
 
     
